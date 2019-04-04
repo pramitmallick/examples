@@ -18,7 +18,7 @@
 ##SBATCH --reservation=chung
 
 # module load pytorch/python2.7/0.3.0_4
-module load pytorch/python3.6/0.3.0_4
+# module load pytorch/python3.6/0.3.0_4
 module load python3/intel/3.6.3 cuda/9.0.176 nccl/cuda9.0/2.4.2
 
 nvprof python main.py --arch alexnet -b 8 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
