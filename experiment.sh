@@ -12,7 +12,7 @@
 ##SBATCH --gres=gpu:k80:4
 ##SBATCH --gres=gpu:p40:4
 #SBATCH --output=out.expCloudML.%j
-#SBATCH --reservation=chung
+##SBATCH --reservation=chung
 
 # module load pytorch/python2.7/0.3.0_4
 # module load pytorch/python3.6/0.3.0_4
