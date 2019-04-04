@@ -1,17 +1,19 @@
 #!/bin/bash
 
 #SBATCH --verbose
-#SBATCH --exclusive
 #SBATCH --job-name=expCloudML
-#SBATCH --time=100:00:00
-##SBATCH --time=00:60:00
-#SBATCH --nodes=1
 #SBATCH --mem=250GB
-#SBATCH --cpus-per-task=28
+#SBATCH --output=out.expCloudML.%j
+
+#SBATCH --time=100:00:00
 #SBATCH--gres=gpu:1
+
+##SBATCH --nodes=1
+##SBATCH --cpus-per-task=28
+##SBATCH --exclusive
+##SBATCH --time=00:60:00
 ##SBATCH --gres=gpu:k80:4
 ##SBATCH --gres=gpu:p40:4
-#SBATCH --output=out.expCloudML.%j
 ##SBATCH --reservation=chung
 
 # module load pytorch/python2.7/0.3.0_4
