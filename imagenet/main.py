@@ -209,8 +209,8 @@ def train(train_loader, model, criterion, optimizer, epoch):
         data_time.update(time.time() - end)
 
         if args.gpu is not None:
-            input = input.cuda(args.gpu, non_blocking=True)
-        target = target.cuda(args.gpu, non_blocking=True)
+            input = input.cuda(args.gpu, async=True)
+        target = target.cuda(args.gpu, async=True)
 
         # compute output
         output = model(input)
@@ -255,8 +255,8 @@ def validate(val_loader, model, criterion):
         end = time.time()
         for i, (input, target) in enumerate(val_loader):
             if args.gpu is not None:
-                input = input.cuda(args.gpu, non_blocking=True)
-            target = target.cuda(args.gpu, non_blocking=True)
+                input = input.cuda(args.gpu, async=True)
+            target = target.cuda(args.gpu, async=True)
 
             # compute output
             output = model(input)
