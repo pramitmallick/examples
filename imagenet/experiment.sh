@@ -12,7 +12,7 @@
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=28
 #SBATCH --exclusive
-##SBATCH --time=00:60:00
+#SBATCH --time=00:60:00
 #SBATCH --gres=gpu:k80:4
 ##SBATCH --gres=gpu:p40:4
 #SBATCH --reservation=chung
