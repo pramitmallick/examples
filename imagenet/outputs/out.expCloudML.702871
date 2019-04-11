@@ -1,0 +1,2 @@
+==104978== NVPROF is profiling process 104978, command: python main.py --arch alexnet -b 16 --epochs 1 --lr 0.001 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch
+slurmstepd: error: *** JOB 702871 ON gpu-07 CANCELLED AT 2019-04-11T02:52:06 DUE TO TIME LIMIT ***
