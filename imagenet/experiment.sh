@@ -24,6 +24,6 @@
 module load python3/intel/3.6.3 cuda/9.0.176 nccl/cuda9.0/2.4.2
 
 source ~/pytorch_env/py3.6.3/bin/activate
-echo "hw_16_0.001_alexnet_p40"
-nvprof --timeout 3000 --output-profile alexnet_16_0.001_small_p40_%p.nvvp --print-summary --csv python main.py --arch alexnet -b 16 --epochs 1 --lr 0.001 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
-# nvprof --output-profile alexnet_16_0.001_small_p40_%p.nvvp --print-summary --csv python main.py --arch alexnet -b 16 --epochs 1 --lr 0.001 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
+echo "hw_16_0.001_resnet18_p40"
+nvprof --timeout 3000 --output-profile resnet18_16_0.001_small_p40_%p.nvvp --csv --log-file resnet18_16_0.001_small_p40_%p.log --track-memory-allocations on --cpu-profiling on --print-summary python main.py --arch resnet18 -b 16 --epochs 1 --lr 0.001 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
+# nvprof --output-profile resnet18_16_0.001_small_p40_%p.nvvp --csv --log-file resnet18_16_0.001_small_p40_%p.log --track-memory-allocations on --cpu-profiling on --print-summary python main.py --arch resnet18 -b 16 --epochs 1 --lr 0.001 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
