@@ -24,6 +24,6 @@
 module load python3/intel/3.6.3 cuda/9.0.176 nccl/cuda9.0/2.4.2
 
 source ~/pytorch_env/py3.6.3/bin/activate
-echo "hw_64_0.001_alexnet_p40"
-# nvprof --output-profile alexnet_16_0.005_%p --print-summary --csv python main.py --arch alexnet -b 16 --epochs 1 --lr 0.001 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
-nvprof --timeout 3000 --output-profile alexnet_64_0.001_small_%p.nvvp --print-summary --csv python main.py --arch alexnet -b 64 --epochs 1 --lr 0.001 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
+echo "hw_16_0.001_alexnet_p40"
+nvprof --timeout 3000 --output-profile alexnet_16_0.001_small_p40_%p.nvvp --print-summary --csv python main.py --arch alexnet -b 16 --epochs 1 --lr 0.001 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
+# nvprof --output-profile alexnet_16_0.001_small_p40_%p.nvvp --print-summary --csv python main.py --arch alexnet -b 16 --epochs 1 --lr 0.001 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
