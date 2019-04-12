@@ -1,0 +1,365 @@
+hw_64_0.001_alexnet_k80
+==68755== NVPROF is profiling process 68755, command: python main.py --arch alexnet -b 64 --epochs 1 --lr 0.001 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
+=> creating model 'alexnet'
+Epoch: [0][0/2092]	Time 13.686 (13.686)	Data 1.359 (1.359)	Loss 6.9062 (6.9062)	Acc@1 0.000 (0.000)	Acc@5 0.000 (0.000)
+Epoch: [0][10/2092]	Time 0.223 (1.382)	Data 0.183 (0.189)	Loss 6.9061 (6.9065)	Acc@1 0.000 (0.142)	Acc@5 0.000 (0.284)
+Epoch: [0][20/2092]	Time 0.191 (0.847)	Data 0.147 (0.194)	Loss 6.9040 (6.9061)	Acc@1 0.000 (0.074)	Acc@5 1.562 (0.298)
+Epoch: [0][30/2092]	Time 0.206 (0.657)	Data 0.163 (0.197)	Loss 6.9031 (6.9054)	Acc@1 0.000 (0.050)	Acc@5 0.000 (0.454)
+Epoch: [0][40/2092]	Time 0.096 (0.555)	Data 0.000 (0.191)	Loss 6.8987 (6.9046)	Acc@1 0.000 (0.076)	Acc@5 3.125 (0.572)
+Epoch: [0][50/2092]	Time 0.139 (0.502)	Data 0.089 (0.196)	Loss 6.8990 (6.9039)	Acc@1 0.000 (0.092)	Acc@5 0.000 (0.797)
+Epoch: [0][60/2092]	Time 0.095 (0.453)	Data 0.000 (0.186)	Loss 6.8991 (6.9030)	Acc@1 0.000 (0.231)	Acc@5 1.562 (1.101)
+Epoch: [0][70/2092]	Time 0.480 (0.431)	Data 0.438 (0.192)	Loss 6.8969 (6.9023)	Acc@1 0.000 (0.286)	Acc@5 3.125 (1.364)
+Epoch: [0][80/2092]	Time 0.099 (0.405)	Data 0.000 (0.188)	Loss 6.8950 (6.9013)	Acc@1 1.562 (0.347)	Acc@5 6.250 (1.659)
+Epoch: [0][90/2092]	Time 0.157 (0.392)	Data 0.117 (0.191)	Loss 6.8918 (6.9003)	Acc@1 0.000 (0.395)	Acc@5 1.562 (1.992)
+Epoch: [0][100/2092]	Time 0.097 (0.373)	Data 0.000 (0.185)	Loss 6.8881 (6.8994)	Acc@1 1.562 (0.402)	Acc@5 6.250 (2.228)
+Epoch: [0][110/2092]	Time 0.095 (0.366)	Data 0.000 (0.188)	Loss 6.8870 (6.8984)	Acc@1 1.562 (0.436)	Acc@5 7.812 (2.463)
+Epoch: [0][120/2092]	Time 0.094 (0.354)	Data 0.015 (0.184)	Loss 6.8820 (6.8972)	Acc@1 1.562 (0.478)	Acc@5 6.250 (2.751)
+Epoch: [0][130/2092]	Time 0.191 (0.350)	Data 0.134 (0.188)	Loss 6.8797 (6.8959)	Acc@1 0.000 (0.465)	Acc@5 1.562 (2.922)
+Epoch: [0][140/2092]	Time 0.098 (0.345)	Data 0.000 (0.188)	Loss 6.8738 (6.8944)	Acc@1 1.562 (0.554)	Acc@5 1.562 (2.992)
+Epoch: [0][150/2092]	Time 0.299 (0.340)	Data 0.253 (0.189)	Loss 6.8610 (6.8927)	Acc@1 1.562 (0.548)	Acc@5 3.125 (3.115)
+Epoch: [0][160/2092]	Time 0.097 (0.333)	Data 0.000 (0.187)	Loss 6.8505 (6.8905)	Acc@1 1.562 (0.563)	Acc@5 7.812 (3.212)
+Epoch: [0][170/2092]	Time 0.095 (0.330)	Data 0.000 (0.188)	Loss 6.8242 (6.8877)	Acc@1 3.125 (0.594)	Acc@5 9.375 (3.372)
+Epoch: [0][180/2092]	Time 0.097 (0.324)	Data 0.000 (0.186)	Loss 6.7898 (6.8834)	Acc@1 1.562 (0.613)	Acc@5 4.688 (3.462)
+Epoch: [0][190/2092]	Time 0.096 (0.322)	Data 0.000 (0.187)	Loss 6.7130 (6.8763)	Acc@1 0.000 (0.630)	Acc@5 3.125 (3.526)
+Epoch: [0][200/2092]	Time 0.097 (0.318)	Data 0.000 (0.185)	Loss 6.2355 (6.8582)	Acc@1 1.562 (0.637)	Acc@5 10.938 (3.584)
+Epoch: [0][210/2092]	Time 0.241 (0.316)	Data 0.197 (0.187)	Loss 5.3638 (6.7994)	Acc@1 1.562 (0.659)	Acc@5 3.125 (3.606)
+Epoch: [0][220/2092]	Time 0.096 (0.314)	Data 0.000 (0.188)	Loss 4.9975 (6.7260)	Acc@1 1.562 (0.679)	Acc@5 3.125 (3.684)
+Epoch: [0][230/2092]	Time 0.096 (0.311)	Data 0.000 (0.187)	Loss 5.3192 (6.6602)	Acc@1 0.000 (0.670)	Acc@5 4.688 (3.700)
+Epoch: [0][240/2092]	Time 0.097 (0.314)	Data 0.000 (0.191)	Loss 5.1103 (6.5972)	Acc@1 0.000 (0.681)	Acc@5 3.125 (3.734)
+Epoch: [0][250/2092]	Time 0.095 (0.319)	Data 0.000 (0.198)	Loss 4.9586 (6.5321)	Acc@1 1.562 (0.679)	Acc@5 9.375 (3.828)
+Epoch: [0][260/2092]	Time 0.107 (0.316)	Data 0.000 (0.197)	Loss 5.0472 (6.4728)	Acc@1 0.000 (0.688)	Acc@5 3.125 (3.927)
+Epoch: [0][270/2092]	Time 0.251 (0.314)	Data 0.208 (0.197)	Loss 4.9789 (6.4172)	Acc@1 0.000 (0.715)	Acc@5 3.125 (3.973)
+Epoch: [0][280/2092]	Time 0.097 (0.312)	Data 0.000 (0.197)	Loss 4.8739 (6.3623)	Acc@1 0.000 (0.740)	Acc@5 3.125 (4.026)
+Epoch: [0][290/2092]	Time 0.110 (0.309)	Data 0.064 (0.196)	Loss 4.8955 (6.3113)	Acc@1 0.000 (0.757)	Acc@5 0.000 (4.032)
+Epoch: [0][300/2092]	Time 0.096 (0.309)	Data 0.000 (0.197)	Loss 4.8655 (6.2641)	Acc@1 1.562 (0.779)	Acc@5 6.250 (4.075)
+Epoch: [0][310/2092]	Time 0.096 (0.308)	Data 0.000 (0.197)	Loss 4.8492 (6.2200)	Acc@1 0.000 (0.784)	Acc@5 1.562 (4.110)
+Epoch: [0][320/2092]	Time 0.094 (0.306)	Data 0.000 (0.196)	Loss 4.7853 (6.1775)	Acc@1 0.000 (0.784)	Acc@5 3.125 (4.123)
+Epoch: [0][330/2092]	Time 0.096 (0.305)	Data 0.000 (0.196)	Loss 4.9275 (6.1378)	Acc@1 0.000 (0.802)	Acc@5 0.000 (4.130)
+Epoch: [0][340/2092]	Time 0.098 (0.305)	Data 0.000 (0.197)	Loss 4.7653 (6.0991)	Acc@1 3.125 (0.806)	Acc@5 4.688 (4.147)
+Epoch: [0][350/2092]	Time 0.095 (0.302)	Data 0.000 (0.195)	Loss 4.8289 (6.0624)	Acc@1 3.125 (0.824)	Acc@5 4.688 (4.176)
+Epoch: [0][360/2092]	Time 0.096 (0.301)	Data 0.000 (0.194)	Loss 4.8560 (6.0274)	Acc@1 0.000 (0.831)	Acc@5 0.000 (4.207)
+Epoch: [0][370/2092]	Time 0.096 (0.300)	Data 0.000 (0.194)	Loss 4.7615 (5.9945)	Acc@1 0.000 (0.821)	Acc@5 6.250 (4.241)
+Epoch: [0][380/2092]	Time 0.094 (0.301)	Data 0.000 (0.195)	Loss 4.8567 (5.9636)	Acc@1 0.000 (0.828)	Acc@5 1.562 (4.253)
+Epoch: [0][390/2092]	Time 0.093 (0.298)	Data 0.000 (0.193)	Loss 4.8985 (5.9337)	Acc@1 0.000 (0.839)	Acc@5 4.688 (4.296)
+Epoch: [0][400/2092]	Time 0.097 (0.298)	Data 0.000 (0.194)	Loss 4.7913 (5.9061)	Acc@1 1.562 (0.830)	Acc@5 3.125 (4.290)
+Epoch: [0][410/2092]	Time 0.095 (0.296)	Data 0.000 (0.193)	Loss 4.8010 (5.8792)	Acc@1 1.562 (0.833)	Acc@5 1.562 (4.315)
+Epoch: [0][420/2092]	Time 0.100 (0.296)	Data 0.000 (0.194)	Loss 4.8011 (5.8536)	Acc@1 1.562 (0.842)	Acc@5 6.250 (4.331)
+Epoch: [0][430/2092]	Time 0.096 (0.294)	Data 0.000 (0.192)	Loss 4.8314 (5.8295)	Acc@1 0.000 (0.845)	Acc@5 3.125 (4.339)
+Epoch: [0][440/2092]	Time 0.093 (0.294)	Data 0.000 (0.193)	Loss 4.7663 (5.8058)	Acc@1 1.562 (0.868)	Acc@5 6.250 (4.358)
+Epoch: [0][450/2092]	Time 0.094 (0.292)	Data 0.000 (0.192)	Loss 4.8608 (5.7841)	Acc@1 0.000 (0.859)	Acc@5 3.125 (4.372)
+Epoch: [0][460/2092]	Time 0.309 (0.292)	Data 0.266 (0.193)	Loss 4.7724 (5.7630)	Acc@1 3.125 (0.864)	Acc@5 6.250 (4.396)
+Epoch: [0][470/2092]	Time 0.095 (0.291)	Data 0.000 (0.192)	Loss 4.8275 (5.7426)	Acc@1 0.000 (0.866)	Acc@5 4.688 (4.412)
+Epoch: [0][480/2092]	Time 0.448 (0.290)	Data 0.406 (0.193)	Loss 4.8823 (5.7226)	Acc@1 1.562 (0.887)	Acc@5 1.562 (4.457)
+Epoch: [0][490/2092]	Time 0.094 (0.289)	Data 0.000 (0.192)	Loss 4.8208 (5.7033)	Acc@1 1.562 (0.901)	Acc@5 3.125 (4.481)
+Epoch: [0][500/2092]	Time 0.242 (0.289)	Data 0.198 (0.193)	Loss 4.8550 (5.6843)	Acc@1 0.000 (0.914)	Acc@5 3.125 (4.528)
+Epoch: [0][510/2092]	Time 0.096 (0.288)	Data 0.000 (0.192)	Loss 4.8222 (5.6665)	Acc@1 0.000 (0.920)	Acc@5 6.250 (4.541)
+Epoch: [0][520/2092]	Time 0.254 (0.288)	Data 0.209 (0.193)	Loss 4.8407 (5.6487)	Acc@1 1.562 (0.915)	Acc@5 3.125 (4.556)
+Epoch: [0][530/2092]	Time 0.097 (0.287)	Data 0.000 (0.193)	Loss 4.6788 (5.6319)	Acc@1 0.000 (0.924)	Acc@5 1.562 (4.555)
+Epoch: [0][540/2092]	Time 0.097 (0.287)	Data 0.000 (0.193)	Loss 4.6984 (5.6156)	Acc@1 3.125 (0.930)	Acc@5 3.125 (4.555)
+Epoch: [0][550/2092]	Time 0.096 (0.287)	Data 0.000 (0.193)	Loss 4.7604 (5.6013)	Acc@1 1.562 (0.922)	Acc@5 10.938 (4.551)
+Epoch: [0][560/2092]	Time 0.097 (0.286)	Data 0.000 (0.193)	Loss 4.7570 (5.5860)	Acc@1 1.562 (0.925)	Acc@5 6.250 (4.571)
+Epoch: [0][570/2092]	Time 0.096 (0.285)	Data 0.000 (0.192)	Loss 4.7559 (5.5716)	Acc@1 0.000 (0.928)	Acc@5 3.125 (4.581)
+Epoch: [0][580/2092]	Time 0.095 (0.285)	Data 0.000 (0.192)	Loss 4.8894 (5.5577)	Acc@1 0.000 (0.917)	Acc@5 1.562 (4.577)
+Epoch: [0][590/2092]	Time 0.094 (0.284)	Data 0.000 (0.191)	Loss 4.7554 (5.5444)	Acc@1 0.000 (0.920)	Acc@5 1.562 (4.576)
+Epoch: [0][600/2092]	Time 0.097 (0.284)	Data 0.000 (0.192)	Loss 4.7218 (5.5315)	Acc@1 1.562 (0.910)	Acc@5 3.125 (4.565)
+Epoch: [0][610/2092]	Time 0.095 (0.283)	Data 0.000 (0.191)	Loss 4.7857 (5.5189)	Acc@1 0.000 (0.916)	Acc@5 3.125 (4.562)
+Epoch: [0][620/2092]	Time 0.096 (0.283)	Data 0.000 (0.191)	Loss 4.7291 (5.5066)	Acc@1 0.000 (0.923)	Acc@5 3.125 (4.574)
+Epoch: [0][630/2092]	Time 0.095 (0.282)	Data 0.000 (0.190)	Loss 4.7732 (5.4946)	Acc@1 0.000 (0.926)	Acc@5 1.562 (4.588)
+Epoch: [0][640/2092]	Time 0.095 (0.282)	Data 0.000 (0.191)	Loss 4.7680 (5.4830)	Acc@1 1.562 (0.931)	Acc@5 6.250 (4.614)
+Epoch: [0][650/2092]	Time 0.106 (0.281)	Data 0.000 (0.190)	Loss 4.7553 (5.4716)	Acc@1 3.125 (0.934)	Acc@5 4.688 (4.613)
+Epoch: [0][660/2092]	Time 0.096 (0.282)	Data 0.000 (0.190)	Loss 4.7680 (5.4610)	Acc@1 3.125 (0.934)	Acc@5 3.125 (4.600)
+Epoch: [0][670/2092]	Time 0.095 (0.280)	Data 0.000 (0.189)	Loss 4.7080 (5.4503)	Acc@1 3.125 (0.931)	Acc@5 9.375 (4.599)
+Epoch: [0][680/2092]	Time 0.095 (0.281)	Data 0.000 (0.190)	Loss 4.7463 (5.4398)	Acc@1 1.562 (0.941)	Acc@5 6.250 (4.612)
+Epoch: [0][690/2092]	Time 0.097 (0.280)	Data 0.000 (0.189)	Loss 4.7305 (5.4296)	Acc@1 1.562 (0.954)	Acc@5 3.125 (4.613)
+Epoch: [0][700/2092]	Time 0.096 (0.280)	Data 0.000 (0.190)	Loss 4.8190 (5.4196)	Acc@1 0.000 (0.952)	Acc@5 4.688 (4.634)
+Epoch: [0][710/2092]	Time 0.096 (0.280)	Data 0.000 (0.189)	Loss 4.8047 (5.4107)	Acc@1 0.000 (0.960)	Acc@5 4.688 (4.633)
+Epoch: [0][720/2092]	Time 0.097 (0.280)	Data 0.000 (0.190)	Loss 4.8078 (5.4018)	Acc@1 0.000 (0.954)	Acc@5 0.000 (4.620)
+Epoch: [0][730/2092]	Time 0.089 (0.280)	Data 0.000 (0.189)	Loss 4.7186 (5.3926)	Acc@1 0.000 (0.949)	Acc@5 3.125 (4.617)
+Epoch: [0][740/2092]	Time 0.096 (0.279)	Data 0.000 (0.189)	Loss 4.6578 (5.3836)	Acc@1 0.000 (0.947)	Acc@5 1.562 (4.609)
+Epoch: [0][750/2092]	Time 0.097 (0.278)	Data 0.000 (0.188)	Loss 4.6878 (5.3752)	Acc@1 1.562 (0.953)	Acc@5 7.812 (4.623)
+Epoch: [0][760/2092]	Time 0.095 (0.278)	Data 0.000 (0.188)	Loss 4.7657 (5.3672)	Acc@1 0.000 (0.953)	Acc@5 3.125 (4.614)
+Epoch: [0][770/2092]	Time 0.106 (0.277)	Data 0.000 (0.187)	Loss 4.7397 (5.3591)	Acc@1 1.562 (0.952)	Acc@5 6.250 (4.602)
+Epoch: [0][780/2092]	Time 0.500 (0.278)	Data 0.451 (0.188)	Loss 4.7835 (5.3513)	Acc@1 0.000 (0.958)	Acc@5 3.125 (4.603)
+Epoch: [0][790/2092]	Time 0.095 (0.278)	Data 0.000 (0.188)	Loss 4.7916 (5.3435)	Acc@1 0.000 (0.962)	Acc@5 6.250 (4.608)
+Epoch: [0][800/2092]	Time 0.516 (0.277)	Data 0.472 (0.188)	Loss 4.7329 (5.3360)	Acc@1 3.125 (0.968)	Acc@5 7.812 (4.600)
+Epoch: [0][810/2092]	Time 0.095 (0.277)	Data 0.000 (0.188)	Loss 4.7638 (5.3285)	Acc@1 0.000 (0.973)	Acc@5 6.250 (4.612)
+Epoch: [0][820/2092]	Time 0.648 (0.277)	Data 0.603 (0.188)	Loss 4.7270 (5.3212)	Acc@1 0.000 (0.967)	Acc@5 4.688 (4.604)
+Epoch: [0][830/2092]	Time 0.108 (0.276)	Data 0.000 (0.188)	Loss 4.7546 (5.3141)	Acc@1 0.000 (0.965)	Acc@5 0.000 (4.605)
+Epoch: [0][840/2092]	Time 0.567 (0.276)	Data 0.525 (0.187)	Loss 4.7946 (5.3074)	Acc@1 1.562 (0.966)	Acc@5 3.125 (4.602)
+Epoch: [0][850/2092]	Time 0.095 (0.275)	Data 0.000 (0.187)	Loss 4.7462 (5.3006)	Acc@1 1.562 (0.968)	Acc@5 6.250 (4.609)
+Epoch: [0][860/2092]	Time 0.167 (0.275)	Data 0.123 (0.187)	Loss 4.7756 (5.2940)	Acc@1 0.000 (0.969)	Acc@5 1.562 (4.602)
+Epoch: [0][870/2092]	Time 0.095 (0.275)	Data 0.000 (0.187)	Loss 4.6665 (5.2875)	Acc@1 0.000 (0.967)	Acc@5 9.375 (4.607)
+Epoch: [0][880/2092]	Time 0.096 (0.275)	Data 0.000 (0.187)	Loss 4.7120 (5.2814)	Acc@1 0.000 (0.956)	Acc@5 4.688 (4.597)
+Epoch: [0][890/2092]	Time 0.097 (0.274)	Data 0.000 (0.187)	Loss 4.7496 (5.2753)	Acc@1 0.000 (0.950)	Acc@5 4.688 (4.591)
+Epoch: [0][900/2092]	Time 0.095 (0.275)	Data 0.000 (0.187)	Loss 4.6724 (5.2691)	Acc@1 0.000 (0.956)	Acc@5 6.250 (4.599)
+Epoch: [0][910/2092]	Time 0.096 (0.274)	Data 0.000 (0.187)	Loss 4.6823 (5.2631)	Acc@1 3.125 (0.960)	Acc@5 10.938 (4.607)
+Epoch: [0][920/2092]	Time 0.096 (0.274)	Data 0.000 (0.187)	Loss 4.7636 (5.2574)	Acc@1 1.562 (0.962)	Acc@5 3.125 (4.608)
+Epoch: [0][930/2092]	Time 0.096 (0.274)	Data 0.000 (0.187)	Loss 4.6970 (5.2518)	Acc@1 0.000 (0.960)	Acc@5 4.688 (4.614)
+Epoch: [0][940/2092]	Time 0.095 (0.274)	Data 0.000 (0.187)	Loss 4.7014 (5.2464)	Acc@1 1.562 (0.960)	Acc@5 3.125 (4.619)
+Epoch: [0][950/2092]	Time 0.095 (0.274)	Data 0.000 (0.187)	Loss 4.7045 (5.2410)	Acc@1 3.125 (0.960)	Acc@5 4.688 (4.618)
+Epoch: [0][960/2092]	Time 0.095 (0.274)	Data 0.000 (0.187)	Loss 4.6986 (5.2352)	Acc@1 1.562 (0.959)	Acc@5 3.125 (4.619)
+Epoch: [0][970/2092]	Time 0.095 (0.273)	Data 0.000 (0.187)	Loss 4.6919 (5.2299)	Acc@1 1.562 (0.957)	Acc@5 3.125 (4.622)
+Epoch: [0][980/2092]	Time 0.097 (0.274)	Data 0.000 (0.187)	Loss 4.6838 (5.2245)	Acc@1 1.562 (0.956)	Acc@5 4.688 (4.622)
+Epoch: [0][990/2092]	Time 0.095 (0.273)	Data 0.000 (0.187)	Loss 4.6881 (5.2197)	Acc@1 3.125 (0.960)	Acc@5 7.812 (4.617)
+Epoch: [0][1000/2092]	Time 0.094 (0.273)	Data 0.000 (0.187)	Loss 4.7190 (5.2146)	Acc@1 0.000 (0.960)	Acc@5 3.125 (4.627)
+Epoch: [0][1010/2092]	Time 0.099 (0.273)	Data 0.000 (0.187)	Loss 4.6775 (5.2098)	Acc@1 0.000 (0.963)	Acc@5 6.250 (4.630)
+Epoch: [0][1020/2092]	Time 0.096 (0.273)	Data 0.000 (0.186)	Loss 4.6545 (5.2050)	Acc@1 1.562 (0.963)	Acc@5 6.250 (4.626)
+Epoch: [0][1030/2092]	Time 0.095 (0.272)	Data 0.000 (0.186)	Loss 4.7101 (5.2004)	Acc@1 0.000 (0.961)	Acc@5 3.125 (4.610)
+Epoch: [0][1040/2092]	Time 0.099 (0.272)	Data 0.000 (0.186)	Loss 4.7226 (5.1958)	Acc@1 1.562 (0.958)	Acc@5 6.250 (4.609)
+Epoch: [0][1050/2092]	Time 0.096 (0.271)	Data 0.000 (0.185)	Loss 4.7070 (5.1910)	Acc@1 0.000 (0.965)	Acc@5 4.688 (4.615)
+Epoch: [0][1060/2092]	Time 0.098 (0.271)	Data 0.000 (0.185)	Loss 4.7185 (5.1868)	Acc@1 1.562 (0.966)	Acc@5 4.688 (4.611)
+Epoch: [0][1070/2092]	Time 0.105 (0.271)	Data 0.000 (0.185)	Loss 4.7598 (5.1823)	Acc@1 4.688 (0.979)	Acc@5 9.375 (4.635)
+Epoch: [0][1080/2092]	Time 0.192 (0.271)	Data 0.150 (0.185)	Loss 4.6605 (5.1781)	Acc@1 0.000 (0.989)	Acc@5 7.812 (4.657)
+Epoch: [0][1090/2092]	Time 0.095 (0.271)	Data 0.000 (0.185)	Loss 4.7342 (5.1741)	Acc@1 0.000 (0.988)	Acc@5 3.125 (4.647)
+Epoch: [0][1100/2092]	Time 0.147 (0.270)	Data 0.103 (0.185)	Loss 4.7563 (5.1699)	Acc@1 0.000 (0.981)	Acc@5 1.562 (4.652)
+Epoch: [0][1110/2092]	Time 0.096 (0.270)	Data 0.000 (0.185)	Loss 4.6370 (5.1659)	Acc@1 0.000 (0.976)	Acc@5 3.125 (4.642)
+Epoch: [0][1120/2092]	Time 0.363 (0.270)	Data 0.320 (0.185)	Loss 4.6985 (5.1620)	Acc@1 1.562 (0.970)	Acc@5 4.688 (4.636)
+Epoch: [0][1130/2092]	Time 0.128 (0.270)	Data 0.085 (0.185)	Loss 4.6766 (5.1580)	Acc@1 1.562 (0.971)	Acc@5 9.375 (4.647)
+Epoch: [0][1140/2092]	Time 0.394 (0.270)	Data 0.351 (0.185)	Loss 4.7745 (5.1542)	Acc@1 0.000 (0.971)	Acc@5 3.125 (4.645)
+Epoch: [0][1150/2092]	Time 0.532 (0.270)	Data 0.489 (0.185)	Loss 4.7837 (5.1504)	Acc@1 1.562 (0.972)	Acc@5 4.688 (4.649)
+Epoch: [0][1160/2092]	Time 0.098 (0.269)	Data 0.000 (0.185)	Loss 4.8042 (5.1468)	Acc@1 0.000 (0.966)	Acc@5 3.125 (4.643)
+Epoch: [0][1170/2092]	Time 0.494 (0.269)	Data 0.449 (0.185)	Loss 4.7363 (5.1431)	Acc@1 0.000 (0.975)	Acc@5 4.688 (4.651)
+Epoch: [0][1180/2092]	Time 0.097 (0.269)	Data 0.000 (0.185)	Loss 4.7876 (5.1395)	Acc@1 0.000 (0.976)	Acc@5 3.125 (4.650)
+Epoch: [0][1190/2092]	Time 0.095 (0.269)	Data 0.000 (0.185)	Loss 4.7558 (5.1361)	Acc@1 0.000 (0.977)	Acc@5 4.688 (4.646)
+Epoch: [0][1200/2092]	Time 0.096 (0.269)	Data 0.000 (0.185)	Loss 4.6953 (5.1324)	Acc@1 0.000 (0.977)	Acc@5 3.125 (4.655)
+Epoch: [0][1210/2092]	Time 0.097 (0.268)	Data 0.000 (0.185)	Loss 4.7242 (5.1290)	Acc@1 1.562 (0.979)	Acc@5 3.125 (4.653)
+Epoch: [0][1220/2092]	Time 0.096 (0.269)	Data 0.000 (0.185)	Loss 4.7538 (5.1256)	Acc@1 0.000 (0.978)	Acc@5 4.688 (4.647)
+Epoch: [0][1230/2092]	Time 0.097 (0.268)	Data 0.000 (0.184)	Loss 4.7209 (5.1224)	Acc@1 1.562 (0.985)	Acc@5 6.250 (4.653)
+Epoch: [0][1240/2092]	Time 0.097 (0.268)	Data 0.000 (0.184)	Loss 4.6744 (5.1190)	Acc@1 1.562 (0.980)	Acc@5 3.125 (4.652)
+Epoch: [0][1250/2092]	Time 0.097 (0.268)	Data 0.000 (0.184)	Loss 4.7997 (5.1158)	Acc@1 0.000 (0.977)	Acc@5 1.562 (4.645)
+Epoch: [0][1260/2092]	Time 0.097 (0.268)	Data 0.000 (0.184)	Loss 4.6392 (5.1124)	Acc@1 0.000 (0.989)	Acc@5 7.812 (4.664)
+Epoch: [0][1270/2092]	Time 0.097 (0.267)	Data 0.000 (0.184)	Loss 4.6462 (5.1094)	Acc@1 1.562 (0.985)	Acc@5 3.125 (4.658)
+Epoch: [0][1280/2092]	Time 0.091 (0.267)	Data 0.000 (0.184)	Loss 4.7800 (5.1062)	Acc@1 1.562 (0.989)	Acc@5 1.562 (4.672)
+Epoch: [0][1290/2092]	Time 0.094 (0.267)	Data 0.000 (0.184)	Loss 4.6156 (5.1030)	Acc@1 0.000 (0.989)	Acc@5 7.812 (4.669)
+Epoch: [0][1300/2092]	Time 0.104 (0.267)	Data 0.059 (0.183)	Loss 4.7485 (5.1000)	Acc@1 3.125 (0.992)	Acc@5 4.688 (4.672)
+Epoch: [0][1310/2092]	Time 0.095 (0.266)	Data 0.000 (0.183)	Loss 4.7270 (5.0971)	Acc@1 1.562 (0.998)	Acc@5 1.562 (4.677)
+Epoch: [0][1320/2092]	Time 0.096 (0.266)	Data 0.000 (0.183)	Loss 4.7200 (5.0942)	Acc@1 0.000 (1.003)	Acc@5 6.250 (4.684)
+Epoch: [0][1330/2092]	Time 0.096 (0.266)	Data 0.000 (0.183)	Loss 4.7204 (5.0914)	Acc@1 3.125 (1.006)	Acc@5 6.250 (4.671)
+Epoch: [0][1340/2092]	Time 0.097 (0.266)	Data 0.000 (0.183)	Loss 4.6977 (5.0884)	Acc@1 1.562 (1.009)	Acc@5 6.250 (4.682)
+Epoch: [0][1350/2092]	Time 0.095 (0.266)	Data 0.000 (0.183)	Loss 4.6709 (5.0857)	Acc@1 1.562 (1.006)	Acc@5 7.812 (4.681)
+Epoch: [0][1360/2092]	Time 0.097 (0.266)	Data 0.000 (0.183)	Loss 4.6810 (5.0830)	Acc@1 1.562 (1.000)	Acc@5 6.250 (4.674)
+Epoch: [0][1370/2092]	Time 0.095 (0.265)	Data 0.000 (0.183)	Loss 4.7369 (5.0803)	Acc@1 0.000 (0.999)	Acc@5 4.688 (4.685)
+Epoch: [0][1380/2092]	Time 0.097 (0.266)	Data 0.000 (0.183)	Loss 4.7213 (5.0775)	Acc@1 0.000 (1.000)	Acc@5 3.125 (4.692)
+Epoch: [0][1390/2092]	Time 0.096 (0.265)	Data 0.000 (0.182)	Loss 4.7486 (5.0749)	Acc@1 1.562 (1.003)	Acc@5 4.688 (4.699)
+Epoch: [0][1400/2092]	Time 0.099 (0.265)	Data 0.000 (0.183)	Loss 4.7090 (5.0721)	Acc@1 1.562 (1.009)	Acc@5 3.125 (4.710)
+Epoch: [0][1410/2092]	Time 0.115 (0.265)	Data 0.000 (0.182)	Loss 4.7155 (5.0694)	Acc@1 1.562 (1.013)	Acc@5 7.812 (4.719)
+Epoch: [0][1420/2092]	Time 0.097 (0.265)	Data 0.000 (0.183)	Loss 4.6895 (5.0667)	Acc@1 1.562 (1.020)	Acc@5 3.125 (4.725)
+Epoch: [0][1430/2092]	Time 0.096 (0.265)	Data 0.000 (0.183)	Loss 4.6909 (5.0641)	Acc@1 3.125 (1.022)	Acc@5 3.125 (4.734)
+Epoch: [0][1440/2092]	Time 0.096 (0.265)	Data 0.000 (0.183)	Loss 4.6685 (5.0617)	Acc@1 0.000 (1.017)	Acc@5 3.125 (4.725)
+Epoch: [0][1450/2092]	Time 0.093 (0.265)	Data 0.045 (0.182)	Loss 4.7873 (5.0592)	Acc@1 1.562 (1.018)	Acc@5 3.125 (4.723)
+Epoch: [0][1460/2092]	Time 0.095 (0.265)	Data 0.000 (0.183)	Loss 4.6717 (5.0568)	Acc@1 0.000 (1.020)	Acc@5 3.125 (4.725)
+Epoch: [0][1470/2092]	Time 0.323 (0.265)	Data 0.281 (0.183)	Loss 4.6929 (5.0544)	Acc@1 0.000 (1.021)	Acc@5 6.250 (4.719)
+Epoch: [0][1480/2092]	Time 0.097 (0.265)	Data 0.000 (0.182)	Loss 4.7076 (5.0520)	Acc@1 1.562 (1.019)	Acc@5 3.125 (4.716)
+Epoch: [0][1490/2092]	Time 0.922 (0.265)	Data 0.873 (0.183)	Loss 4.6577 (5.0495)	Acc@1 3.125 (1.025)	Acc@5 9.375 (4.730)
+Epoch: [0][1500/2092]	Time 0.096 (0.264)	Data 0.000 (0.182)	Loss 4.6786 (5.0471)	Acc@1 3.125 (1.030)	Acc@5 4.688 (4.732)
+Epoch: [0][1510/2092]	Time 0.486 (0.264)	Data 0.436 (0.182)	Loss 4.7310 (5.0446)	Acc@1 3.125 (1.032)	Acc@5 7.812 (4.743)
+Epoch: [0][1520/2092]	Time 0.096 (0.264)	Data 0.000 (0.182)	Loss 4.7180 (5.0424)	Acc@1 0.000 (1.033)	Acc@5 3.125 (4.743)
+Epoch: [0][1530/2092]	Time 0.981 (0.264)	Data 0.930 (0.183)	Loss 4.7110 (5.0401)	Acc@1 0.000 (1.034)	Acc@5 4.688 (4.745)
+Epoch: [0][1540/2092]	Time 0.097 (0.264)	Data 0.000 (0.183)	Loss 4.7033 (5.0377)	Acc@1 1.562 (1.037)	Acc@5 9.375 (4.761)
+Epoch: [0][1550/2092]	Time 0.542 (0.264)	Data 0.501 (0.183)	Loss 4.6633 (5.0355)	Acc@1 0.000 (1.033)	Acc@5 6.250 (4.764)
+Epoch: [0][1560/2092]	Time 0.118 (0.264)	Data 0.000 (0.183)	Loss 4.6726 (5.0335)	Acc@1 0.000 (1.032)	Acc@5 3.125 (4.766)
+Epoch: [0][1570/2092]	Time 0.521 (0.264)	Data 0.469 (0.183)	Loss 4.6909 (5.0313)	Acc@1 0.000 (1.032)	Acc@5 4.688 (4.772)
+Epoch: [0][1580/2092]	Time 0.101 (0.264)	Data 0.000 (0.183)	Loss 4.7037 (5.0291)	Acc@1 1.562 (1.034)	Acc@5 6.250 (4.772)
+Epoch: [0][1590/2092]	Time 0.794 (0.264)	Data 0.750 (0.183)	Loss 4.7377 (5.0269)	Acc@1 1.562 (1.039)	Acc@5 1.562 (4.776)
+Epoch: [0][1600/2092]	Time 0.074 (0.264)	Data 0.000 (0.183)	Loss 4.6977 (5.0248)	Acc@1 1.562 (1.042)	Acc@5 4.688 (4.782)
+Epoch: [0][1610/2092]	Time 0.296 (0.264)	Data 0.253 (0.183)	Loss 4.6103 (5.0226)	Acc@1 1.562 (1.042)	Acc@5 9.375 (4.796)
+Epoch: [0][1620/2092]	Time 0.100 (0.264)	Data 0.000 (0.182)	Loss 4.6375 (5.0203)	Acc@1 1.562 (1.043)	Acc@5 3.125 (4.809)
+Epoch: [0][1630/2092]	Time 0.229 (0.264)	Data 0.184 (0.182)	Loss 4.7502 (5.0182)	Acc@1 0.000 (1.044)	Acc@5 4.688 (4.823)
+Epoch: [0][1640/2092]	Time 0.096 (0.264)	Data 0.000 (0.182)	Loss 4.6468 (5.0160)	Acc@1 1.562 (1.047)	Acc@5 6.250 (4.835)
+Epoch: [0][1650/2092]	Time 0.474 (0.263)	Data 0.423 (0.182)	Loss 4.6552 (5.0138)	Acc@1 1.562 (1.050)	Acc@5 4.688 (4.841)
+Epoch: [0][1660/2092]	Time 0.095 (0.263)	Data 0.000 (0.182)	Loss 4.6413 (5.0117)	Acc@1 1.562 (1.054)	Acc@5 9.375 (4.855)
+Epoch: [0][1670/2092]	Time 0.106 (0.263)	Data 0.022 (0.182)	Loss 4.6368 (5.0095)	Acc@1 1.562 (1.059)	Acc@5 6.250 (4.868)
+Epoch: [0][1680/2092]	Time 0.117 (0.263)	Data 0.000 (0.182)	Loss 4.7135 (5.0075)	Acc@1 0.000 (1.060)	Acc@5 7.812 (4.878)
+Epoch: [0][1690/2092]	Time 0.075 (0.263)	Data 0.000 (0.182)	Loss 4.6610 (5.0053)	Acc@1 3.125 (1.065)	Acc@5 4.688 (4.890)
+Epoch: [0][1700/2092]	Time 0.097 (0.263)	Data 0.000 (0.182)	Loss 4.6433 (5.0032)	Acc@1 1.562 (1.067)	Acc@5 7.812 (4.909)
+Epoch: [0][1710/2092]	Time 0.117 (0.263)	Data 0.000 (0.182)	Loss 4.6485 (5.0013)	Acc@1 1.562 (1.069)	Acc@5 7.812 (4.917)
+Epoch: [0][1720/2092]	Time 0.105 (0.263)	Data 0.000 (0.182)	Loss 4.6255 (4.9992)	Acc@1 0.000 (1.073)	Acc@5 7.812 (4.936)
+Epoch: [0][1730/2092]	Time 0.062 (0.263)	Data 0.000 (0.182)	Loss 4.6506 (4.9973)	Acc@1 1.562 (1.076)	Acc@5 7.812 (4.947)
+Epoch: [0][1740/2092]	Time 0.097 (0.263)	Data 0.000 (0.182)	Loss 4.7138 (4.9952)	Acc@1 3.125 (1.079)	Acc@5 6.250 (4.965)
+Epoch: [0][1750/2092]	Time 0.095 (0.262)	Data 0.000 (0.181)	Loss 4.6353 (4.9935)	Acc@1 1.562 (1.083)	Acc@5 6.250 (4.969)
+Epoch: [0][1760/2092]	Time 0.096 (0.263)	Data 0.000 (0.182)	Loss 4.6119 (4.9915)	Acc@1 3.125 (1.093)	Acc@5 6.250 (4.981)
+Epoch: [0][1770/2092]	Time 0.096 (0.263)	Data 0.000 (0.182)	Loss 4.6384 (4.9895)	Acc@1 1.562 (1.092)	Acc@5 6.250 (4.992)
+Epoch: [0][1780/2092]	Time 0.096 (0.263)	Data 0.000 (0.182)	Loss 4.6029 (4.9875)	Acc@1 3.125 (1.096)	Acc@5 6.250 (5.003)
+Epoch: [0][1790/2092]	Time 0.096 (0.262)	Data 0.000 (0.181)	Loss 4.7027 (4.9856)	Acc@1 1.562 (1.096)	Acc@5 6.250 (5.011)
+Epoch: [0][1800/2092]	Time 0.101 (0.263)	Data 0.000 (0.182)	Loss 4.6419 (4.9837)	Acc@1 3.125 (1.097)	Acc@5 7.812 (5.012)
+Epoch: [0][1810/2092]	Time 0.095 (0.262)	Data 0.000 (0.181)	Loss 4.6701 (4.9816)	Acc@1 0.000 (1.102)	Acc@5 4.688 (5.032)
+Epoch: [0][1820/2092]	Time 0.097 (0.262)	Data 0.000 (0.181)	Loss 4.6882 (4.9798)	Acc@1 0.000 (1.106)	Acc@5 3.125 (5.037)
+Epoch: [0][1830/2092]	Time 0.095 (0.262)	Data 0.009 (0.181)	Loss 4.6910 (4.9779)	Acc@1 1.562 (1.109)	Acc@5 7.812 (5.059)
+Epoch: [0][1840/2092]	Time 0.096 (0.262)	Data 0.000 (0.181)	Loss 4.6069 (4.9760)	Acc@1 0.000 (1.119)	Acc@5 7.812 (5.075)
+Epoch: [0][1850/2092]	Time 0.097 (0.263)	Data 0.000 (0.182)	Loss 4.6354 (4.9742)	Acc@1 0.000 (1.122)	Acc@5 4.688 (5.085)
+Epoch: [0][1860/2092]	Time 0.096 (0.262)	Data 0.000 (0.182)	Loss 4.6487 (4.9722)	Acc@1 1.562 (1.125)	Acc@5 6.250 (5.102)
+Epoch: [0][1870/2092]	Time 0.097 (0.263)	Data 0.000 (0.182)	Loss 4.5428 (4.9703)	Acc@1 3.125 (1.130)	Acc@5 7.812 (5.118)
+Epoch: [0][1880/2092]	Time 0.117 (0.263)	Data 0.000 (0.182)	Loss 4.6509 (4.9686)	Acc@1 1.562 (1.133)	Acc@5 4.688 (5.134)
+Epoch: [0][1890/2092]	Time 0.096 (0.263)	Data 0.000 (0.182)	Loss 4.5303 (4.9666)	Acc@1 4.688 (1.137)	Acc@5 10.938 (5.154)
+Epoch: [0][1900/2092]	Time 0.100 (0.262)	Data 0.000 (0.182)	Loss 4.4847 (4.9646)	Acc@1 0.000 (1.142)	Acc@5 14.062 (5.175)
+Epoch: [0][1910/2092]	Time 0.095 (0.264)	Data 0.000 (0.183)	Loss 4.5195 (4.9627)	Acc@1 0.000 (1.149)	Acc@5 9.375 (5.199)
+Epoch: [0][1920/2092]	Time 0.108 (0.264)	Data 0.000 (0.183)	Loss 4.6506 (4.9610)	Acc@1 3.125 (1.154)	Acc@5 4.688 (5.208)
+Epoch: [0][1930/2092]	Time 0.072 (0.264)	Data 0.000 (0.183)	Loss 4.6389 (4.9589)	Acc@1 3.125 (1.156)	Acc@5 9.375 (5.226)
+Epoch: [0][1940/2092]	Time 0.103 (0.264)	Data 0.000 (0.183)	Loss 4.5820 (4.9573)	Acc@1 1.562 (1.161)	Acc@5 9.375 (5.232)
+Epoch: [0][1950/2092]	Time 0.095 (0.264)	Data 0.000 (0.183)	Loss 4.4881 (4.9554)	Acc@1 3.125 (1.165)	Acc@5 10.938 (5.250)
+Epoch: [0][1960/2092]	Time 0.097 (0.264)	Data 0.000 (0.183)	Loss 4.5994 (4.9537)	Acc@1 1.562 (1.165)	Acc@5 7.812 (5.264)
+Epoch: [0][1970/2092]	Time 0.095 (0.264)	Data 0.000 (0.183)	Loss 4.6161 (4.9519)	Acc@1 1.562 (1.169)	Acc@5 6.250 (5.269)
+Epoch: [0][1980/2092]	Time 0.096 (0.264)	Data 0.000 (0.183)	Loss 4.5034 (4.9501)	Acc@1 0.000 (1.168)	Acc@5 7.812 (5.282)
+Epoch: [0][1990/2092]	Time 0.105 (0.264)	Data 0.000 (0.183)	Loss 4.5668 (4.9485)	Acc@1 0.000 (1.168)	Acc@5 6.250 (5.285)
+Epoch: [0][2000/2092]	Time 0.097 (0.264)	Data 0.000 (0.183)	Loss 4.4290 (4.9467)	Acc@1 3.125 (1.167)	Acc@5 18.750 (5.301)
+Epoch: [0][2010/2092]	Time 0.095 (0.264)	Data 0.000 (0.183)	Loss 4.5756 (4.9448)	Acc@1 1.562 (1.172)	Acc@5 14.062 (5.319)
+Epoch: [0][2020/2092]	Time 0.097 (0.264)	Data 0.000 (0.183)	Loss 4.4998 (4.9431)	Acc@1 4.688 (1.180)	Acc@5 10.938 (5.339)
+Epoch: [0][2030/2092]	Time 0.096 (0.264)	Data 0.000 (0.183)	Loss 4.6580 (4.9414)	Acc@1 1.562 (1.185)	Acc@5 7.812 (5.357)
+Epoch: [0][2040/2092]	Time 0.086 (0.264)	Data 0.000 (0.183)	Loss 4.5893 (4.9398)	Acc@1 1.562 (1.191)	Acc@5 7.812 (5.372)
+Epoch: [0][2050/2092]	Time 0.095 (0.264)	Data 0.000 (0.183)	Loss 4.5538 (4.9381)	Acc@1 4.688 (1.194)	Acc@5 12.500 (5.391)
+Epoch: [0][2060/2092]	Time 0.098 (0.264)	Data 0.000 (0.183)	Loss 4.4881 (4.9364)	Acc@1 3.125 (1.201)	Acc@5 15.625 (5.413)
+Epoch: [0][2070/2092]	Time 0.099 (0.264)	Data 0.000 (0.183)	Loss 4.4923 (4.9346)	Acc@1 0.000 (1.204)	Acc@5 10.938 (5.434)
+Epoch: [0][2080/2092]	Time 0.096 (0.264)	Data 0.000 (0.183)	Loss 4.5966 (4.9327)	Acc@1 4.688 (1.207)	Acc@5 6.250 (5.450)
+Epoch: [0][2090/2092]	Time 0.095 (0.264)	Data 0.000 (0.183)	Loss 4.6282 (4.9311)	Acc@1 3.125 (1.208)	Acc@5 10.938 (5.461)
+Test: [0/82]	Time 2.115 (2.115)	Loss 4.4496 (4.4496)	Acc@1 1.562 (1.562)	Acc@5 12.500 (12.500)
+Test: [10/82]	Time 0.027 (0.448)	Loss 4.2553 (4.4598)	Acc@1 0.000 (0.568)	Acc@5 6.250 (9.517)
+Test: [20/82]	Time 0.703 (0.380)	Loss 4.7790 (4.5361)	Acc@1 0.000 (0.372)	Acc@5 0.000 (6.771)
+Test: [30/82]	Time 0.125 (0.337)	Loss 4.3694 (4.5361)	Acc@1 0.000 (0.252)	Acc@5 0.000 (5.796)
+Test: [40/82]	Time 1.645 (0.361)	Loss 4.3001 (4.5604)	Acc@1 0.000 (0.191)	Acc@5 29.688 (6.364)
+Test: [50/82]	Time 0.027 (0.334)	Loss 4.6156 (4.5525)	Acc@1 0.000 (1.195)	Acc@5 0.000 (8.701)
+Test: [60/82]	Time 1.748 (0.346)	Loss 3.9428 (4.5456)	Acc@1 39.062 (2.049)	Acc@5 57.812 (10.015)
+Test: [70/82]	Time 0.026 (0.329)	Loss 4.3701 (4.5519)	Acc@1 0.000 (2.289)	Acc@5 1.562 (11.246)
+Test: [80/82]	Time 0.860 (0.338)	Loss 4.2140 (4.5591)	Acc@1 31.250 (2.585)	Acc@5 39.062 (10.802)
+ * Acc@1 2.577 Acc@5 10.769
+==68755== Profiling application: python main.py --arch alexnet -b 64 --epochs 1 --lr 0.001 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
+==68755== Profiling result:
+"Type","Time(%)","Time","Calls","Avg","Min","Max","Name"
+,%,s,,ms,ms,ms,
+"GPU activities",38.098764,398.492801,1810025,0.220158,0.030720,0.688568,"sgemm_sm35_ldg_nt_64x16x64x16x16"
+"GPU activities",22.501928,235.358197,949882,0.247776,0.017439,5.062076,"sgemm_sm35_ldg_nn_64x16x64x16x16"
+"GPU activities",10.196398,106.648898,17392,6.132066,0.318620,26.732422,"ncclBroadcastKernel_copy_i8(ncclColl)"
+"GPU activities",2.338526,24.459739,8762,2.791570,0.735000,8.434268,"void cudnn::detail::implicit_convolve_sgemm<float, float, int=1024, int=5, int=5, int=3, int=3, int=3, int=1, bool=1, bool=0, bool=1>(int, int, int, float const *, int, float*, cudnn::detail::implicit_convolve_sgemm<float, float, int=1024, int=5, int=5, int=3, int=3, int=3, int=1, bool=1, bool=0, bool=1>*, kernel_conv_params, int, float, float, int, float, float, int, int)"
+"GPU activities",2.214930,23.166992,25533,0.907335,0.800663,2.211266,"void fermiPlusCgemmLDS128_batched<bool=1, bool=0, bool=0, bool=0, int=4, int=4, int=4, int=3, int=3, bool=1, bool=0>(float2* const *, float2* const *, float2* const *, float2*, float2 const *, float2 const *, int, int, int, int, int, int, __int64, __int64, __int64, float2 const *, float2 const *, float2, float2, int)"
+"GPU activities",2.155803,22.548551,71272,0.316373,0.002303,4.103681,"void kernelPointwiseApply2<TensorAddOp<float>, float, float, unsigned int, int=1, int=1>(OffsetInfo<TensorAddOp<float>, float, unsigned int>, OffsetInfo<float, float, int=1>, float, float)"
+"GPU activities",2.152604,22.515088,8392,2.682922,1.585775,2.779760,"void cudnn::detail::wgrad_alg0_engine<float, int=512, int=6, int=5, int=3, int=3, int=3, bool=1, int=512>(int, int, int, float const *, int, cudnn::detail::wgrad_alg0_engine<float, int=512, int=6, int=5, int=3, int=3, int=3, bool=1, int=512>*, float const , kernel_grad_params, int, float, int, int, int, int)"
+"GPU activities",2.145769,22.443607,66944,0.335259,0.002303,3.865445,"void kernelPointwiseApply2<TensorCAddOp<float>, float, float, unsigned int, int=1, int=1>(OffsetInfo<TensorCAddOp<float>, float, unsigned int>, OffsetInfo<float, float, int=1>, float, float)"
+"GPU activities",1.967733,20.581441,8368,2.459541,2.028289,13.440403,"ncclReduceKernel_sum_f32(ncclColl)"
+"GPU activities",1.875660,19.618402,25104,0.781485,0.179486,1.201484,"void MaxPoolBackward<float, float>(int, float const *, long const *, int, int, int, int, int, int, int, int, int, int, int, int, int, int, float*)"
+"GPU activities",1.673586,17.504821,6519,2.685200,0.848467,5.728499,"sgemm_sm35_ldg_tn_32x16x64x8x16"
+"GPU activities",1.482125,15.502235,32162,0.482004,0.001216,23.319250,"[CUDA memcpy HtoD]"
+"GPU activities",1.350286,14.123269,6276,2.250361,0.445114,5.798321,"sgemm_sm_heavy_nt_ldg"
+"GPU activities",0.909607,9.514007,17086,0.556830,0.536154,0.587994,"void fft2d_r2c_32x32<float, unsigned int=5, bool=0>(float2*, float const *, int, int, int, int, int, int, int, int, int, cudnn::reduced_divisor, bool)"
+"GPU activities",0.820732,8.584418,37820,0.226980,0.002207,3.182032,"void kernelPointwiseApply1<TensorMulConstantOp<float>, float, unsigned int, int=1>(OffsetInfo<TensorMulConstantOp<float>, float, unsigned int>, float, float)"
+"GPU activities",0.701480,7.337112,17139,0.428094,0.048287,1.019471,"void flip_filter<float, float>(float*, float const *, int, int, int, int)"
+"GPU activities",0.645400,6.750542,26088,0.258760,0.027264,0.388219,"void MaxPoolForward<float, float>(int, float const *, int, int, int, int, int, int, int, int, int, int, int, int, int, int, float*, long*)"
+"GPU activities",0.621171,6.497120,46024,0.141168,0.022463,0.379196,"void kernelPointwiseApply3<ThresholdUpdateGradInput<float>, float, float, float, unsigned int, int=1, int=1, int=1>(OffsetInfo<ThresholdUpdateGradInput<float>, float, unsigned int>, OffsetInfo<float, float, int=1>, OffsetInfo<float, float, int=1>, float, float)"
+"GPU activities",0.570021,5.962112,51236,0.116365,0.076767,0.187390,"void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused::WinogradOutputParams<float, float>)"
+"GPU activities",0.521470,5.454301,51236,0.106454,0.062335,0.163197,"void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::WinogradDataParams<float, float>)"
+"GPU activities",0.515736,5.394320,51236,0.105283,0.083039,0.145246,"void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused::WinogradFilterParams<float, float>)"
+"GPU activities",0.461445,4.826469,41840,0.115355,0.039712,0.314587,"void calc_bias_diff<int=2, float, float, int=128, int=0>(cudnnTensorStruct, float const *, cudnnTensorStruct, float*, float, float, int)"
+"GPU activities",0.451417,4.721586,47828,0.098720,0.006816,0.217982,"void kernelPointwiseApply1<ThresholdUpdateOutputIP<float>, float, unsigned int, int=1>(OffsetInfo<ThresholdUpdateOutputIP<float>, float, unsigned int>, float, float)"
+"GPU activities",0.448745,4.693636,33846,0.138676,0.043072,0.223324,"void fft2d_r2c_32x32<float, unsigned int=0, bool=0>(float2*, float const *, int, int, int, int, int, int, int, int, int, cudnn::reduced_divisor, bool)"
+"GPU activities",0.429824,4.495728,8431,0.533237,0.075903,0.593977,"void fft2d_c2r_32x32<float, bool=0, unsigned int=1, bool=0, bool=0>(float*, float2 const *, int, int, int, int, int, int, int, int, int, float, float, cudnn::reduced_divisor, bool, float*, float*)"
+"GPU activities",0.293408,3.068896,34780,0.088237,0.020383,0.165181,"void add_tensor_kernel_v3<int=2, float, float, int=32, int=1, int=4, int=2, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)"
+"GPU activities",0.264256,2.763979,25127,0.110000,0.087647,0.181214,"void cudnn::winograd_nonfused::winogradWgradOutput4x4<float, float>(cudnn::winograd_nonfused::WinogradWgradOutputParams<float, float>)"
+"GPU activities",0.252774,2.643877,25127,0.105220,0.048544,0.149342,"void cudnn::winograd_nonfused::winogradWgradDelta4x4<float, float>(cudnn::winograd_nonfused::WinogradDeltaParams<float, float>)"
+"GPU activities",0.251407,2.629580,25127,0.104651,0.040671,0.156669,"void cudnn::winograd_nonfused::winogradWgradData4x4<float, float>(cudnn::winograd_nonfused::WinogradDataParams<float, float>)"
+"GPU activities",0.234571,2.453490,17098,0.143495,0.049567,0.211390,"void fft2d_c2r_32x32<float, bool=0, unsigned int=0, bool=0, bool=0>(float*, float2 const *, int, int, int, int, int, int, int, int, int, float, float, cudnn::reduced_divisor, bool, float*, float*)"
+"GPU activities",0.223623,2.338982,2174,1.075888,0.278972,1.091762,"void adaptiveaveragepool<float>(float*, float*, int, int, int, int, long, long, long)"
+"GPU activities",0.214073,2.239091,2092,1.070311,0.755958,1.094129,"void atomicadaptiveaveragegradinput<float>(float*, float*, int, int, int, int)"
+"GPU activities",0.199854,2.090361,8700,0.240271,0.059199,0.251484,"void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)"
+"GPU activities",0.156931,1.641418,12716,0.129082,0.045343,0.161726,"void CatArrayBatchedCopy<float, unsigned int, int=1>(float*, CatArrInputTensor<float, unsigned int>*, OutputTensorSizeStride<unsigned int, unsigned int=4>, int, unsigned int)"
+"GPU activities",0.092560,0.968124,11619,0.083322,0.001760,85.980064,"[CUDA memcpy DtoH]"
+"GPU activities",0.063426,0.663402,74,8.964896,1.754989,13.750762,"cgemm_strided_batched_sm35_ldg_nt_64x8x64x16x16"
+"GPU activities",0.058100,0.607698,6276,0.096828,0.043167,0.486008,"sgemm_sm35_ldg_nt_128x16x64x16x16"
+"GPU activities",0.052265,0.546668,2174,0.251457,0.093343,0.292028,"void gatherTopK<float, unsigned int, int=2, bool=1>(TensorInfo<float, unsigned int>, unsigned int, unsigned int, unsigned int, unsigned int, TensorInfo<float, unsigned int>, unsigned int, unsigned int, TensorInfo<long, unsigned int>, unsigned int)"
+"GPU activities",0.047784,0.499796,4184,0.119454,0.054400,0.169693,"generate_bernoulli(curandStateMtgp32*, int, float*, double)"
+"GPU activities",0.031628,0.330816,4266,0.077547,0.022560,0.105630,"[CUDA memcpy PtoP]"
+"GPU activities",0.027434,0.286942,72,3.985310,1.606542,7.142642,"void cudnn::detail::wgrad_alg0_engine<float, int=128, int=6, int=8, int=3, int=3, int=5, bool=1, int=512>(int, int, int, float const *, int, cudnn::detail::wgrad_alg0_engine<float, int=128, int=6, int=8, int=3, int=3, int=5, bool=1, int=512>*, float const , kernel_grad_params, int, float, int, int, int, int)"
+"GPU activities",0.021073,0.220415,58,3.800265,2.053545,6.004255,"cudnn_dgrad_sm35_ldg_nt_64x16x128x8x32"
+"GPU activities",0.021037,0.220038,85,2.588683,0.905046,5.453301,"void cudnn::detail::implicit_convolve_sgemm<float, float, int=128, int=6, int=7, int=3, int=3, int=5, int=1, bool=1, bool=0, bool=1>(int, int, int, float const *, int, float*, cudnn::detail::implicit_convolve_sgemm<float, float, int=128, int=6, int=7, int=3, int=3, int=5, int=1, bool=1, bool=0, bool=1>*, kernel_conv_params, int, float, float, int, float, float, int, int)"
+"GPU activities",0.016265,0.170119,4184,0.040659,0.020256,0.095871,"void kernelPointwiseApply3<TensorMulOp<float>, float, float, float, unsigned int, int=1, int=1, int=1>(OffsetInfo<TensorMulOp<float>, float, unsigned int>, OffsetInfo<float, float, int=1>, OffsetInfo<float, float, int=1>, float, float)"
+"GPU activities",0.015744,0.164671,4184,0.039357,0.015520,0.057023,"void kernelPointwiseApply2<TensorMulOp<float>, float, float, unsigned int, int=1, int=1>(OffsetInfo<TensorMulOp<float>, float, unsigned int>, OffsetInfo<float, float, int=1>, float, float)"
+"GPU activities",0.015335,0.160391,8466,0.018945,0.002592,2.072384,"[CUDA memcpy DtoD]"
+"GPU activities",0.014878,0.155614,57,2.730062,0.626775,6.268992,"cudnn_convolve_sgemm_sm35_ldg_nn_64x16x64x16x16"
+"GPU activities",0.014091,0.147380,60,2.456325,0.810584,4.169518,"void cudnn::winograd::winograd3x3Kernel<float, float, int=2, int=2, int=8, bool=0>(cudnn::maxwell::winograd::KernelParams)"
+"GPU activities",0.012761,0.133471,33,4.044582,3.228126,4.998538,"void fft2d_r2c_32x32<float, unsigned int=1, bool=1>(float2*, float const *, int, int, int, int, int, int, int, int, int, cudnn::reduced_divisor, bool)"
+"GPU activities",0.012421,0.129912,25533,0.005088,0.003168,0.009184,"compute_gemm_pointers(float2**, float2 const *, int, float2 const *, int, float2 const *, int, int)"
+"GPU activities",0.012106,0.126624,4184,0.030263,0.012543,0.043552,"void kernelPointwiseApply1<TensorDivConstantOp<float>, float, unsigned int, int=1>(OffsetInfo<TensorDivConstantOp<float>, float, unsigned int>, float, float)"
+"GPU activities",0.010328,0.108023,81,1.333614,0.070015,5.019818,"void fft2d_r2c_32x32<float, unsigned int=1, bool=0>(float2*, float const *, int, int, int, int, int, int, int, int, int, cudnn::reduced_divisor, bool)"
+"GPU activities",0.009588,0.100290,162,0.619075,0.042815,1.945579,"void fft2d_r2c_16x16<float>(float2*, float const *, int, int, int, int, int, int, int, int)"
+"GPU activities",0.009466,0.099006,6276,0.015775,0.009056,0.033216,"void kernelReduceNoncontigDim_shared<float, unsigned int, float, thrust::identity<float>, ReduceAdd<float>, thrust::identity<float>, int=1, int=1>(TensorInfo<float, unsigned int>, TensorInfo<float, unsigned int>, unsigned int, unsigned int, unsigned int, float, float, thrust::identity<float>, float, float volatile *, int*)"
+"GPU activities",0.008846,0.092525,6522,0.014186,0.003424,0.019424,"void kernelPointwiseApply2<CopyOp<float, float>, float, float, unsigned int, int=1, int=2>(OffsetInfo<float, float, float>, OffsetInfo<CopyOp<float, float>, float, unsigned int>, float, float)"
+"GPU activities",0.008766,0.091693,48309,0.001898,0.001055,0.008320,"[CUDA memset]"
+"GPU activities",0.006986,0.073069,2174,0.033610,0.018784,0.037120,"void at::native::_GLOBAL__N__54_tmpxft_00005dd4_00000000_10_SoftMax_compute_70_cpp1_ii_826a4626::cunn_SoftMaxForward<int=2, float, float, at::native::_GLOBAL__N__54_tmpxft_00005dd4_00000000_10_SoftMax_compute_70_cpp1_ii_826a4626::LogSoftMaxForwardEpilogue>(float*, float, int)"
+"GPU activities",0.006222,0.065084,15,4.338934,1.604559,5.957084,"void cudnn::detail::implicit_convolve_sgemm<float, float, int=512, int=6, int=8, int=3, int=3, int=5, int=1, bool=1, bool=0, bool=1>(int, int, int, float const *, int, float*, cudnn::detail::implicit_convolve_sgemm<float, float, int=512, int=6, int=8, int=3, int=3, int=5, int=1, bool=1, bool=0, bool=1>*, kernel_conv_params, int, float, float, int, float, float, int, int)"
+"GPU activities",0.006084,0.063632,24,2.651338,1.791884,3.125059,"void cudnn::detail::wgrad_alg0_engine<float, int=128, int=6, int=7, int=3, int=3, int=5, bool=1, int=512>(int, int, int, float const *, int, cudnn::detail::wgrad_alg0_engine<float, int=128, int=6, int=7, int=3, int=3, int=5, bool=1, int=512>*, float const , kernel_grad_params, int, float, int, int, int, int)"
+"GPU activities",0.005747,0.060114,8,7.514226,4.953482,9.497543,"void cudnn::detail::wgrad_alg1_engine<float, int=128, int=6, int=8, int=3, int=3, int=5, bool=1, bool=1>(int, int, int, float const *, int, cudnn::detail::wgrad_alg1_engine<float, int=128, int=6, int=8, int=3, int=3, int=5, bool=1, bool=1>*, float const , kernel_grad_params, int, float, float, int, int, int*, kernel_grad_params, int, int)"
+"GPU activities",0.005372,0.056192,17,3.305410,1.593070,5.474189,"void cudnn::detail::wgrad_alg1_engine<float, int=128, int=6, int=8, int=3, int=3, int=5, bool=1, bool=0>(int, int, int, float const *, int, cudnn::detail::wgrad_alg1_engine<float, int=128, int=6, int=8, int=3, int=3, int=5, bool=1, bool=0>*, float const , kernel_grad_params, int, float, float, int, int, int*, kernel_grad_params, int, int)"
+"GPU activities",0.004759,0.049777,16,3.111042,1.656334,4.342604,"void cudnn::detail::dgrad_alg1_engine<float, int=128, int=6, int=8, int=3, int=3, int=5, bool=1, bool=0>(int, int, int, float const *, int, float const , int, cudnn::detail::dgrad_alg1_engine<float, int=128, int=6, int=8, int=3, int=3, int=5, bool=1, bool=0>*, kernel_grad_params, int, int, float, int)"
+"GPU activities",0.004356,0.045566,81,0.562544,0.047519,2.033066,"void fft2d_c2r_16x16<float, bool=0>(float*, float2*, int, int, int, int, int, int, int, int, int, int, float, float, int, float*, float*)"
+"GPU activities",0.004233,0.044271,2092,0.021162,0.015648,0.023136,"void at::native::_GLOBAL__N__54_tmpxft_00005dd4_00000000_10_SoftMax_compute_70_cpp1_ii_826a4626::cunn_SoftMaxBackward<int=2, float, float, at::native::_GLOBAL__N__54_tmpxft_00005dd4_00000000_10_SoftMax_compute_70_cpp1_ii_826a4626::LogSoftMaxBackwardEpilogue>(float*, float, float, int)"
+"GPU activities",0.003679,0.038477,5,7.695313,4.737100,9.052798,"void cudnn::detail::dgrad_alg1_engine<float, int=512, int=6, int=5, int=3, int=3, int=3, bool=1, bool=0>(int, int, int, float const *, int, float const , int, cudnn::detail::dgrad_alg1_engine<float, int=512, int=6, int=5, int=3, int=3, int=3, bool=1, bool=0>*, kernel_grad_params, int, int, float, int)"
+"GPU activities",0.003529,0.036914,2174,0.016979,0.016576,0.018431,"void bitonicSortKVInPlace<float, long, int=2, int=-1, GTComp<float>, unsigned int, int=32>(TensorInfo<float, GTComp<float>>, GTComp<float>, GTComp<float>, GTComp<float>, TensorInfo<long, GTComp<float>>, GTComp<float>, float const &)"
+"GPU activities",0.003351,0.035046,8,4.380718,2.769378,6.485890,"void cudnn::detail::dgrad_alg1_engine<float, int=128, int=6, int=7, int=3, int=3, int=5, bool=1, bool=0>(int, int, int, float const *, int, float const , int, cudnn::detail::dgrad_alg1_engine<float, int=128, int=6, int=7, int=3, int=3, int=5, bool=1, bool=0>*, kernel_grad_params, int, int, float, int)"
+"GPU activities",0.002735,0.028607,57,0.501872,0.215230,1.413029,"void im2col4d_kernel<float, int>(im2col4d_params, cudnnConvolutionStruct, cudnnTensor4dStruct, float const *, float*, int)"
+"GPU activities",0.002536,0.026523,8,3.315365,2.498629,3.684240,"void cudnn::detail::wgrad_alg1_engine<float, int=512, int=6, int=5, int=3, int=3, int=3, bool=1, bool=1>(int, int, int, float const *, int, cudnn::detail::wgrad_alg1_engine<float, int=512, int=6, int=5, int=3, int=3, int=3, bool=1, bool=1>*, float const , kernel_grad_params, int, float, float, int, int, int*, kernel_grad_params, int, int)"
+"GPU activities",0.002517,0.026326,4348,0.006054,0.004768,0.007264,"void kernelReduceContigDim<float, unsigned int, float, thrust::identity<float>, ReduceAdd<float>, thrust::identity<float>, int=1, int=1>(TensorInfo<float, unsigned int>, TensorInfo<float, unsigned int>, unsigned int, unsigned int, float, float, thrust::identity<float>, float)"
+"GPU activities",0.002506,0.026208,2174,0.012055,0.009280,0.013568,"void cunn_ClassNLLCriterion_updateOutput_kernel<float, float>(float*, float*, float*, long*, float*, int, int, int, int, long)"
+"GPU activities",0.002356,0.024647,8,3.080925,2.071722,3.621609,"void cudnn::detail::wgrad_alg1_engine<float, int=128, int=6, int=7, int=3, int=3, int=5, bool=1, bool=0>(int, int, int, float const *, int, cudnn::detail::wgrad_alg1_engine<float, int=128, int=6, int=7, int=3, int=3, int=5, bool=1, bool=0>*, float const , kernel_grad_params, int, float, float, int, int, int*, kernel_grad_params, int, int)"
+"GPU activities",0.002176,0.022762,9,2.529164,2.461159,2.679100,"void cudnn::detail::implicit_convolve_sgemm<float, float, int=1024, int=6, int=7, int=3, int=3, int=5, int=1, bool=1, bool=0, bool=1>(int, int, int, float const *, int, float*, cudnn::detail::implicit_convolve_sgemm<float, float, int=1024, int=6, int=7, int=3, int=3, int=5, int=1, bool=1, bool=0, bool=1>*, kernel_conv_params, int, float, float, int, float, float, int, int)"
+"GPU activities",0.001852,0.019374,2092,0.009261,0.008512,0.009888,"void cunn_ClassNLLCriterion_updateGradInput_kernel<float>(float*, float*, long*, float*, float*, int, int, int, int, long)"
+"GPU activities",0.001812,0.018955,432,0.043878,0.022111,0.079904,"cgemm_sm35_ldg_tn_64x8x64x16x16"
+"GPU activities",0.001162,0.012157,6,2.026090,1.670382,2.482725,"void cudnn::winograd::winograd3x3Kernel<float, float, int=1, int=4, int=8, bool=0>(cudnn::maxwell::winograd::KernelParams)"
+"GPU activities",0.001122,0.011739,4348,0.002699,0.002208,0.006592,"void kernelPointwiseApply2<TensorDivConstantOp<float>, float, float, unsigned int, int=1, int=1>(OffsetInfo<TensorDivConstantOp<float>, float, unsigned int>, OffsetInfo<float, float, int=1>, float, float)"
+"GPU activities",0.001119,0.011700,4348,0.002690,0.002368,0.003424,"void kernelPointwiseApply2<CopyOp<float, unsigned char>, float, unsigned char, unsigned int, int=1, int=1>(OffsetInfo<unsigned char, float, unsigned char>, OffsetInfo<CopyOp<float, unsigned char>, float, unsigned int>, float, float)"
+"GPU activities",0.001056,0.011044,4348,0.002539,0.002208,0.003264,"void kernelPointwiseApply2<TensorMulConstantOp<float>, float, float, unsigned int, int=1, int=1>(OffsetInfo<TensorMulConstantOp<float>, float, unsigned int>, OffsetInfo<float, float, int=1>, float, float)"
+"GPU activities",0.000891,0.009323,2174,0.004288,0.004096,0.005376,"void kernelPointwiseApply3<TensorEQOp<long, unsigned char>, unsigned char, long, long, unsigned int, int=1, int=2, int=2>(OffsetInfo<unsigned char, long, long>, OffsetInfo<TensorEQOp<long, unsigned char>, long, unsigned int>, OffsetInfo<unsigned char, long, int=1>, long, long)"
+"GPU activities",0.000637,0.006658,12,0.554843,0.546107,0.561722,"void fft2d_r2c_32x32<float, unsigned int=5, bool=1>(float2*, float const *, int, int, int, int, int, int, int, int, int, cudnn::reduced_divisor, bool)"
+"GPU activities",0.000575,0.006015,2092,0.002875,0.002464,0.006592,"void kernelPointwiseApply1<TensorFillOp<float>, float, unsigned int, int=1>(OffsetInfo<TensorFillOp<float>, float, unsigned int>, float, float)"
+"GPU activities",0.000550,0.005755,3,1.918235,0.499961,3.620687,"void sgemm_largek_lds64<bool=1, bool=0, int=5, int=5, int=4, int=4, int=4, int=34>(float*, float const *, float const *, int, int, int, int, int, int, float const *, float const *, float, float, int, int, int*, int*)"
+"GPU activities",0.000452,0.004731,17,0.278313,0.124863,0.380218,"void cudnn::winograd_nonfused::winogradForwardOutput9x9_5x5<float, float>(cudnn::winograd_nonfused::WinogradOutputParams<float, float>)"
+"GPU activities",0.000450,0.004708,27,0.174381,0.122366,0.375260,"void cudnn::winograd_nonfused::winogradForwardData9x9_5x5<float, float>(cudnn::winograd_nonfused::WinogradDataParams<float, float>)"
+"GPU activities",0.000418,0.004375,66,0.066282,0.053632,0.082271,"void cudnn::winograd::generateWinogradTilesKernel<int=0, float, float>(cudnn::winograd::GenerateWinogradTilesParams<float, float>)"
+"GPU activities",0.000292,0.003051,10,0.305138,0.300796,0.314875,"void cudnn::winograd_nonfused::winogradWgradDelta9x9_5x5<float, float>(cudnn::winograd_nonfused::WinogradDeltaParams<float, float>)"
+"GPU activities",0.000199,0.002082,87,0.023935,0.012096,0.038879,"void scalePackedTensor_kernel<float, float>(cudnnTensor4dStruct, float*, float)"
+"GPU activities",0.000172,0.001797,17,0.105732,0.103295,0.108670,"void cudnn::winograd_nonfused::winogradForwardFilter9x9_5x5<float, float>(cudnn::winograd_nonfused::WinogradFilterParams<float, float>)"
+"GPU activities",0.000134,0.001397,10,0.139709,0.135966,0.143166,"void cudnn::winograd_nonfused::winogradWgradOutput9x9_5x5<float, float>(cudnn::winograd_nonfused::WinogradWgradOutputParams<float, float>)"
+"GPU activities",0.000002,0.000025,3,0.008202,0.006016,0.009920,"void scal_kernel<float, float, int=1, bool=0, int=6, int=5, int=5, int=3>(cublasTransposeParams<float>, float const *, float*, float const *)"
+"GPU activities",0.000001,0.000011,4,0.002736,0.002272,0.003264,"void kernelPointwiseApply2<TensorAddConstantOp<float>, float, float, unsigned int, int=1, int=1>(OffsetInfo<TensorAddConstantOp<float>, float, unsigned int>, OffsetInfo<float, float, int=1>, float, float)"
+"GPU activities",0.000000,0.000003,1,0.002784,0.002784,0.002784,"void kernelPointwiseApply2<TensorLTValueOp<float, unsigned char>, unsigned char, float, unsigned int, int=1, int=1>(OffsetInfo<unsigned char, unsigned char, float>, OffsetInfo<TensorLTValueOp<float, unsigned char>, unsigned char, unsigned int>, unsigned char, float)"
+"GPU activities",0.000000,0.000003,1,0.002752,0.002752,0.002752,"void kernelPointwiseApply2<TensorGTValueOp<float, unsigned char>, unsigned char, float, unsigned int, int=1, int=1>(OffsetInfo<unsigned char, unsigned char, float>, OffsetInfo<TensorGTValueOp<float, unsigned char>, unsigned char, unsigned int>, unsigned char, float)"
+"API calls",51.487996,112.493208,47923,2.347374,0.005652,76.426855,"cudaMemcpyAsync"
+"API calls",26.333328,57.534198,3684735,0.015614,0.005078,62.036806,"cudaLaunchKernel"
+"API calls",4.608799,10.069504,20,503.475218,0.001814,3372.222591,"cudaStreamCreateWithPriority"
+"API calls",3.496543,7.639400,66896,0.114198,0.000400,52.166175,"cudaEventDestroy"
+"API calls",2.936788,6.416422,6735662,0.000952,0.000257,5.748046,"cudaGetDevice"
+"API calls",2.197633,4.801484,300,16.004947,0.016284,3203.704620,"cudaMalloc"
+"API calls",1.445630,3.158476,818,3.861217,0.041386,19.124348,"cudaEventSynchronize"
+"API calls",1.336657,2.920386,1398518,0.002088,0.000454,19.965363,"cudaStreamWaitEvent"
+"API calls",1.183540,2.585850,2687165,0.000962,0.000278,2.751903,"cudaSetDevice"
+"API calls",1.083044,2.366281,1057802,0.002236,0.000415,20.585987,"cudaEventRecord"
+"API calls",0.917234,2.004012,3777719,0.000530,0.000108,2.720555,"cudaGetLastError"
+"API calls",0.772903,1.688672,66960,0.025219,0.000454,138.588963,"cudaEventCreateWithFlags"
+"API calls",0.714328,1.560695,221,7.061970,0.000800,60.197323,"cudaFree"
+"API calls",0.442309,0.966376,48293,0.020010,0.003099,47.752714,"cudaMemsetAsync"
+"API calls",0.403387,0.881336,251079,0.003510,0.000607,2.027513,"cudaEventQuery"
+"API calls",0.206394,0.450939,35,12.883971,0.052978,88.717547,"cudaHostAlloc"
+"API calls",0.127483,0.278529,58,4.802231,0.010927,87.090643,"cudaMemcpy"
+"API calls",0.124433,0.271867,126,2.157676,0.727975,4.729133,"cudaMemGetInfo"
+"API calls",0.104005,0.227234,17688,0.012846,0.001883,41.501964,"cudaBindTexture"
+"API calls",0.023166,0.050613,17688,0.002861,0.000588,3.630931,"cudaUnbindTexture"
+"API calls",0.019402,0.042391,16,2.649420,0.957671,15.440610,"cudaHostRegister"
+"API calls",0.010650,0.023268,3070,0.007579,0.001903,1.093137,"cudaStreamSynchronize"
+"API calls",0.004770,0.010423,6276,0.001660,0.000528,0.023544,"cudaStreamGetPriority"
+"API calls",0.004313,0.009423,756,0.012464,0.000201,0.711821,"cuDeviceGetAttribute"
+"API calls",0.004207,0.009192,8,1.149034,1.114193,1.176121,"cudaGetDeviceProperties"
+"API calls",0.003586,0.007834,8,0.979249,0.722990,1.240413,"cuDeviceTotalMem"
+"API calls",0.002420,0.005287,10,0.528674,0.018570,2.453354,"cudaDeviceEnablePeerAccess"
+"API calls",0.002083,0.004551,818,0.005563,0.003291,0.030727,"cudaEventElapsedTime"
+"API calls",0.001590,0.003474,38,0.091432,0.001895,0.908315,"cudaStreamCreateWithFlags"
+"API calls",0.000399,0.000872,16,0.054509,0.016600,0.152868,"cudaMemset"
+"API calls",0.000341,0.000745,8,0.093118,0.079403,0.115178,"cuDeviceGetName"
+"API calls",0.000266,0.000582,34,0.017120,0.006183,0.042194,"cudaDeviceCanAccessPeer"
+"API calls",0.000154,0.000337,74,0.004550,0.002005,0.017200,"cudaEventCreate"
+"API calls",0.000061,0.000134,158,0.000848,0.000437,0.005153,"cudaDeviceGetAttribute"
+"API calls",0.000055,0.000120,36,0.003328,0.001426,0.009643,"cudaDeviceGetPCIBusId"
+"API calls",0.000042,0.000092,4,0.023104,0.011304,0.056032,"cudaStreamDestroy"
+"API calls",0.000037,0.000080,20,0.003992,0.001805,0.006770,"cudaHostGetDevicePointer"
+"API calls",0.000015,0.000032,60,0.000531,0.000144,0.004504,"cudaGetDeviceCount"
+"API calls",0.000003,0.000007,4,0.001765,0.001231,0.002314,"cudaDeviceGetStreamPriorityRange"
+"API calls",0.000003,0.000007,12,0.000586,0.000251,0.002822,"cuDeviceGet"
+"API calls",0.000002,0.000003,4,0.000819,0.000218,0.001908,"cuDeviceGetCount"
+"API calls",0.000001,0.000001,1,0.001497,0.001497,0.001497,"cuInit"
+"API calls",0.000000,0.000001,1,0.001073,0.001073,0.001073,"cuDriverGetVersion"
+==68755== Generated result file: /scratch/pm2758/cloudML/imagenet/alexnet_64_0.001_small_68755.nvvp
