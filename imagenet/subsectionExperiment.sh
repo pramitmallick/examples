@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --verbose
-#SBATCH --job-name=kexpCloudML
+#SBATCH --job-name=subExpCloudML
 #SBATCH --mem=100GB
 #SBATCH --output=out.expCloudML.%j
 
@@ -24,6 +24,6 @@
 module load python3/intel/3.6.3 cuda/9.0.176 nccl/cuda9.0/2.4.2
 
 source ~/pytorch_env/py3.6.3/bin/activate
-echo "hw_16_0.001_resnet18_k80_loss_only"
-nvprof --timeout 3000 --output-profile resnet18_loss_only_16_0.001_small_k80_%p.nvvp --csv --log-file resnet18_loss_only_16_0.001_small_k80_%p.log --profile-from-start off --track-memory-allocations on --cpu-profiling on --print-summary python subsectionMain.py --arch resnet18 -b 16 --epochs 1 --lr 0.001 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
-# nvprof --output-profile resnet18_16_0.001_small_p40_wotimeout_%p.nvvp --csv --log-file resnet18_16_0.001_small_p40_wotimeout_%p.log --profile-from-start off --track-memory-allocations on --cpu-profiling on --print-summary python main.py --arch resnet18 -b 16 --epochs 1 --lr 0.001 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
+echo "hw_16_0.001_alexnet_k80_loss_only"
+nvprof --timeout 1800 --output-profile alexnet_loss_only_16_0.001_small_k80_%p.nvvp --csv --log-file alexnet_loss_only_16_0.001_small_k80_%p.log --profile-from-start off --track-memory-allocations on --cpu-profiling on --print-summary python subsectionMain.py --arch alexnet -b 16 --epochs 1 --lr 0.001 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
+# nvprof --output-profile alexnet_loss_only_16_0.001_small_k80_%p.nvvp --csv --log-file alexnet_loss_only_16_0.001_small_k80_%p.log --profile-from-start off --track-memory-allocations on --cpu-profiling on --print-summary python subsectionMain.py --arch alexnet -b 16 --epochs 1 --lr 0.001 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
