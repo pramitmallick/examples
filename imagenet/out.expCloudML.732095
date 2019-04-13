@@ -1,0 +1,3 @@
+hw_16_0.001_alexnet_k80
+=> creating model 'alexnet'
+slurmstepd: error: *** JOB 732095 ON gpu-07 CANCELLED AT 2019-04-12T20:50:23 DUE TO TIME LIMIT ***
