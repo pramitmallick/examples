@@ -27,7 +27,8 @@ source ~/pytorch_env/py3.6.3/bin/activate
 
 echo "general_alexnet_16_0.01_full_cpu"
 # nvprof --timeout 900 --csv --metric gld_efficiency python main.py --arch alexnet -b 16 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
-nvprof --timeout 900 --csv  --cpu-profiling on --print-summary python main.py --arch alexnet -b 16 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
+nvprof --timeout 300 --csv --cpu-profiling on --print-summary python main.py --arch alexnet -b 16 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
+# nvprof --timeout 300 --csv --track-memory-allocations on --print-summary python main.py --arch alexnet -b 16 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
 # nvprof --timeout 1800 --csv --track-memory-allocations on --cpu-profiling on --print-summary python main.py --arch alexnet -b 16 --epochs 1 --lr 0.001 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
 # nvprof --timeout 1800 --output-profile alexnet_16_0.001_small_k80_timeout_%p.nvvp --csv --log-file alexnet_16_0.001_small_k80_timeout_%p.log --track-memory-allocations on --cpu-profiling on --print-summary python main.py --arch alexnet -b 16 --epochs 1 --lr 0.001 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
 
