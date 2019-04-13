@@ -3,7 +3,7 @@
 #SBATCH --verbose
 #SBATCH --job-name=expCloudML
 #SBATCH --mem=100GB
-#SBATCH --output=out.expCloudML.%j
+#SBATCH --output=out.alexnet_16_0.001_k80_full.%j
 
 ##SBATCH --time=100:00:00
 #SBATCH--gres=gpu:1
@@ -13,8 +13,8 @@
 #SBATCH --cpus-per-task=28
 #SBATCH --exclusive
 #SBATCH --time=00:60:00
-##SBATCH --gres=gpu:k80:4
-#SBATCH --gres=gpu:p40:4
+#SBATCH --gres=gpu:k80:4
+##SBATCH --gres=gpu:p40:4
 #SBATCH --reservation=chung
 
 # module load pytorch/python2.7/0.3.0_4
