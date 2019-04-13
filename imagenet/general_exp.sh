@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --verbose
-#SBATCH --job-name=expCloudML
+#SBATCH --job-name=gExpCloudML
 #SBATCH --mem=100GB
 #SBATCH --output=out.general_alexnet_16_0.01_full_cpu.%j
 
