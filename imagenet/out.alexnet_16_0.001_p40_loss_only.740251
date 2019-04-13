@@ -1,0 +1,7 @@
+alexnet_16_0.001_p40_loss_only
+==20161== NVPROF is profiling process 20161, command: python subsectionMain.py --arch alexnet -b 16 --epochs 1 --lr 0.001 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
+==20161== Execution timeout, stopping the application...
+==20161== Profiling application: python subsectionMain.py --arch alexnet -b 16 --epochs 1 --lr 0.001 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
+==20161== Profiling result:
+No kernels were profiled.
+No API activities were profiled.
