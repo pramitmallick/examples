@@ -3,7 +3,7 @@
 #SBATCH --verbose
 #SBATCH --job-name=gExpCloudML
 #SBATCH --mem=100GB
-#SBATCH --output=out.general_alexnet_16_0.01_full_cpu.%j
+#SBATCH --output=out.general_300_alexnet_16_0.01_full_cpu.%j
 
 #SBATCH --time=100:00:00
 #SBATCH--gres=gpu:1
