@@ -5,12 +5,12 @@
 #SBATCH --mem=100GB
 #SBATCH --output=out.general_alexnet_16_0.01_full_cpu.%j
 
-##SBATCH --time=100:00:00
+#SBATCH --time=100:00:00
 #SBATCH--gres=gpu:1
 
-#SBATCH --mem=250GB
-#SBATCH --nodes=1
-#SBATCH --cpus-per-task=28
+##SBATCH --mem=250GB
+##SBATCH --nodes=1
+##SBATCH --cpus-per-task=28
 ##SBATCH --exclusive
 ##SBATCH --time=00:60:00
 ##SBATCH --gres=gpu:k80:4
