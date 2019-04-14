@@ -1,0 +1,5 @@
+alexnet_16_0.01_k80_full_cpu
+==143915== NVPROF is profiling process 143915, command: python main.py --arch alexnet -b 16 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
+=> creating model 'alexnet'
+==143915== Execution timeout, stopping the application...
+slurmstepd: error: *** JOB 744614 ON gpu-07 CANCELLED AT 2019-04-13T20:52:05 DUE TO TIME LIMIT ***
