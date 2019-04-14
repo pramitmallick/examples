@@ -25,9 +25,10 @@ module load python3/intel/3.6.3 cuda/9.0.176 nccl/cuda9.0/2.4.2
 
 source ~/pytorch_env/py3.6.3/bin/activate
 
-echo "alexnet_16_0.01_k80_full_cpu"
+echo "alexnet_16_0.01_k80_full"
+nvprof --timeout 100 --csv --print-summary python main.py --arch alexnet -b 16 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
 # nvprof --timeout 900 --csv --metric gld_efficiency python main.py --arch alexnet -b 16 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
-nvprof --timeout 300 --csv --cpu-profiling on --print-summary python main.py --arch alexnet -b 16 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
+# nvprof --timeout 300 --csv --cpu-profiling on --print-summary python main.py --arch alexnet -b 16 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
 # nvprof --timeout 1800 --csv --track-memory-allocations on --cpu-profiling on --print-summary python main.py --arch alexnet -b 16 --epochs 1 --lr 0.001 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
 # nvprof --timeout 1800 --output-profile alexnet_16_0.001_small_k80_timeout_%p.nvvp --csv --log-file alexnet_16_0.001_small_k80_timeout_%p.log --track-memory-allocations on --cpu-profiling on --print-summary python main.py --arch alexnet -b 16 --epochs 1 --lr 0.001 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
 

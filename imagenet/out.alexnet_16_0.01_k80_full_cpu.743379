@@ -1,7 +1,0 @@
-alexnet_16_0.01_k80_full_cpu
-==118908== NVPROF is profiling process 118908, command: python main.py --arch alexnet -b 16 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
-==118908== Execution timeout, stopping the application...
-==118908== Profiling application: python main.py --arch alexnet -b 16 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
-==118908== Profiling result:
-No kernels were profiled.
-No API activities were profiled.
