@@ -26,9 +26,9 @@ module load python3/intel/3.6.3 cuda/9.0.176 nccl/cuda9.0/2.4.2
 source ~/pytorch_env/py3.6.3/bin/activate
 
 echo "inception_4_0.01_k80_full"
-nvprof --timeout 300 --output-profile inception_4_0.01_k80_full_%p.nvvp --csv --print-summary python main.py --arch inception -b 4 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
-# nvprof --timeout 300 --kernels "convolve" --metrics gld_efficiency --csv --print-summary python main.py --arch inception -b 8 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
-# nvprof --timeout 300 --output-profile inception_64_0.01_k80_full_%p_mem.nvvp --csv --track-memory-allocations on --print-summary python main.py --arch inception -b 64 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
+nvprof --timeout 300 --output-profile inception_4_0.01_k80_full_%p.nvvp --csv --print-summary python main.py --arch inception_v3 -b 4 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
+# nvprof --timeout 300 --kernels "convolve" --metrics gld_efficiency --csv --print-summary python main.py --arch inception_v3 -b 8 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
+# nvprof --timeout 300 --output-profile inception_64_0.01_k80_full_%p_mem.nvvp --csv --track-memory-allocations on --print-summary python main.py --arch inception_v3 -b 64 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
 
 
 # nvprof --timeout 900 --csv --metric gld_efficiency python main.py --arch alexnet -b 16 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
