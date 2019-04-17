@@ -216,9 +216,9 @@ def train(train_loader, model, criterion, optimizer, epoch):
 
         # compute output
         output = model(input)
-        cudaprofile.start()
+        # cudaprofile.start()
         loss = criterion(output, target)
-        cudaprofile.stop()
+        # cudaprofile.stop()
 
         # measure accuracy and record loss
         acc1, acc5 = accuracy(output, target, topk=(1, 5))
@@ -227,9 +227,11 @@ def train(train_loader, model, criterion, optimizer, epoch):
         top5.update(acc5[0], input.size(0))
 
         # compute gradient and do SGD step
+        cudaprofile.start()
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
+        cudaprofile.stop()
 
         # measure elapsed time
         batch_time.update(time.time() - end)
