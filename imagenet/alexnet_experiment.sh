@@ -3,7 +3,7 @@
 #SBATCH --verbose
 #SBATCH --job-name=BAexpCloudML
 #SBATCH --mem=100GB
-#SBATCH --output=out.alexnet_64_0.01_p40_backprop.%j
+#SBATCH --output=out.alexnet_64_0.01_k80_backprop.%j
 
 ##SBATCH --time=100:00:00
 ##SBATCH--gres=gpu:1
@@ -13,8 +13,8 @@
 #SBATCH --cpus-per-task=28
 #SBATCH --exclusive
 #SBATCH --time=00:60:00
-##SBATCH --gres=gpu:k80:4
-#SBATCH --gres=gpu:p40:4
+#SBATCH --gres=gpu:k80:4
+##SBATCH --gres=gpu:p40:4
 #SBATCH --reservation=chung
 
 # module load pytorch/python2.7/0.3.0_4
@@ -25,7 +25,7 @@ module load python3/intel/3.6.3 cuda/9.0.176 nccl/cuda9.0/2.4.2
 
 source ~/pytorch_env/py3.6.3/bin/activate
 
-echo "alexnet_64_0.01_p40_full_backprop"
+echo "alexnet_64_0.01_k80_full_backprop"
 nvprof --timeout 600 --csv --profile-from-start off --print-summary python subsectionMain.py --arch alexnet -b 64 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
 # nvprof --timeout 300 --output-profile alexnet_64_0.01_p40_full_%p.nvvp --csv --print-summary python main.py --arch alexnet -b 64 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
 # nvprof --timeout 300 --output-profile alexnet_4_0.01_p40_conv_%p.nvvp --kernels "convolve" --metrics gld_efficiency --csv --print-summary python main.py --arch alexnet -b 4 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
