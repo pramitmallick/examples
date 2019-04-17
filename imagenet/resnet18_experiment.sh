@@ -3,7 +3,7 @@
 #SBATCH --verbose
 #SBATCH --job-name=BRexpCloudML
 #SBATCH --mem=100GB
-#SBATCH --output=out.resnet18_32_0.01_k80_backprop.%j
+#SBATCH --output=out.resnet18_16_0.01_k80_backprop.%j
 
 ##SBATCH --time=100:00:00
 ##SBATCH--gres=gpu:1
@@ -25,8 +25,8 @@ module load python3/intel/3.6.3 cuda/9.0.176 nccl/cuda9.0/2.4.2
 
 source ~/pytorch_env/py3.6.3/bin/activate
 
-echo "resnet18_32_0.01_k80_backprop"
-nvprof --timeout 600 --csv --profile-from-start off --print-summary python subsectionMain.py --arch resnet18 -b 32 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
+echo "resnet18_16_0.01_k80_backprop"
+nvprof --timeout 600 --csv --profile-from-start off --print-summary python subsectionMain.py --arch resnet18 -b 16 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
 # nvprof --timeout 300 --output-profile resnet18_64_0.01_p40_full_%p.nvvp --csv --print-summary python main.py --arch resnet18 -b 64 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
 # nvprof --timeout 300 --output-profile resnet18_4_0.01_p40_conv_%p.nvvp --kernels "convolve" --metrics gld_efficiency --csv --print-summary python main.py --arch resnet18 -b 4 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
 # nvprof --timeout 300 --output-profile resnet18_4_0.01_p40_full_%p_mem.nvvp --csv --track-memory-allocations on --print-summary python main.py --arch resnet18 -b 4 --epochs 1 --lr 0.01 /beegfs/work/courses/2019-CSCI-GA-3033-025/imagenet_pytorch_small
